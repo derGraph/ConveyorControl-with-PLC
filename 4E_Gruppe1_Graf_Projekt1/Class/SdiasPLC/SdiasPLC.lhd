@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HWClassInfo>
+	<Class Name="SdiasPLC" SingleObject="SdiasPLC" NeedClasses="HwControl" BusTypePLC="SDIAS" >
+		<Uplink Name="SDias" Channel="ToHwControl" BusType="HWCONTROL_SDM" />
+  		<Downlink Name="SdiasOut_1" BusType="SDIAS"/>
+		<Property Name="SDIAS Manager Time in µs" Channel="CycleTime" Desc="Bus cycle time in µs (max. 32000), as Initvalue" Editor="EditNumber:Signed;Dec" />
+		<Property Name="SDIAS Iso Start Point" Channel="IsoStartPoint" Desc="% of SDIAS Manager Time [10..90], where the SDIAS starts to work the Read Accesses (Write accesses are started immediately after the HW-Classes have finished their work" Editor="Range:10..90;Empty" />
+	</Class>
+</HWClassInfo>

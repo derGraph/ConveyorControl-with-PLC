@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="net0" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "Abschluss1"
+			GUID       = "{609EFBE4-080B-4E81-9C15-E6C0B2A6A7FE}"
+			Class      = "Abschluss"
+			Position   = "(402,150)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="Alarm"/>
+				<Server Name="auto"/>
+				<Server Name="auto_spd"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="hand"/>
+				<Server Name="input_S1"/>
+				<Server Name="input_S2"/>
+				<Server Name="input_S3"/>
+				<Server Name="spd"/>
+				<Server Name="status"/>
+				<Server Name="stop"/>
+				<Client Name="MTR_enable"/>
+				<Client Name="MTR_speed"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="Abschluss1.MTR_enable" Destination="_DriveAxis1.AxEnable"/>
+		<Connection Source="Abschluss1.MTR_speed" Destination="_DriveAxis1.SetSpeed"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1001" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS Digital Input Module">
+    <Types>
+      <Device Name="DI200" ClassName="DI200" DisplayGroup="Digital" Default="true" />
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="DI 200" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="1" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" />
+            <VisualText Text="1" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="17.99" />
+            <VisualText Text="2" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="21.17" />
+            <VisualText Text="3" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="24.34" />
+            <VisualText Text="4" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="27.52" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" />
+            <VisualText Text="5" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="33.34" />
+            <VisualText Text="6" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="36.51" />
+            <VisualText Text="7" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="39.69" />
+            <VisualText Text="8" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="42.86" />
+            <VisualText Text="X3" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="46.3" />
+            <VisualText Text="9" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.32" Height="2.65" Left="0.26" Top="48.68" />
+            <VisualText Text="10" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="51.86" />
+            <VisualText Text="11" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="55.03" />
+            <VisualText Text="12" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="58.21" />
+            <VisualText Text="X4" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="61.65" />
+            <VisualText Text="13" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="64.03" />
+            <VisualText Text="14" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="67.2" />
+            <VisualText Text="15" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="70.38" />
+            <VisualText Text="16" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="73.55" />
+            <VisualText Text="X5" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="76.99" />
+            <VisualText Text="17" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="79.38" />
+            <VisualText Text="18" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="82.55" />
+            <VisualText Text="19" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="85.72" />
+            <VisualText Text="20" FontFamily="ARIAL" ClrForeground="4294967295" Width="2.38" Height="2.65" Left="0.26" Top="88.9" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="DI200.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" Negate="true" DataString="DI200.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="DI200.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="DI200.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="DI200.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="DI200.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="Digital input 1" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="19.31">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input1" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 2" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="22.49">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input2" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 3" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="25.66">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input3" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 4" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="28.84">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input4" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="Digital input 5" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="34.66">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input5" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 6" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="37.84">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input6" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 7" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="41.01">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input7" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 8" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="44.19">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input8" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X3-->
+            <VisualLed Description="Digital input 9" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="50.01">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input9" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 10" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="53.18">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input10" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 11" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="56.36">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input11" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 12" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="59.53">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input12" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X4-->
+            <VisualLed Description="Digital input 13" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="65.35">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input13" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 14" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="68.53">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input14" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 15" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="71.7">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input15" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 16" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="74.88">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input16" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X5-->
+            <VisualLed Description="Digital input 17" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="80.7">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input17" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 18" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="83.87">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input18" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 19" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="87.05">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input19" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Digital input 20" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="90.22">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="DI200.Input20" Value="1" />
+              </Behaviour>
+            </VisualLed>
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector Description="X1" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin DataString="DI200.Input1" Description="Digital Input 1" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input2" Description="Digital Input 2" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input3" Description="Digital Input 3" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input4" Description="Digital Input 4" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X2" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin DataString="DI200.Input5" Description="Digital Input 5" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input6" Description="Digital Input 6" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input7" Description="Digital Input 7" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input8" Description="Digital Input 8" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X3" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="47.62">
+              <ConnectorPin DataString="DI200.Input9" Description="Digital Input 9" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input10" Description="Digital Input 10" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input11" Description="Digital Input 11" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input12" Description="Digital Input 12" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X4" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="62.97">
+              <ConnectorPin DataString="DI200.Input13" Description="Digital Input 13" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input14" Description="Digital Input 14" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input15" Description="Digital Input 15" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input16" Description="Digital Input 16" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X5" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="78.32">
+              <ConnectorPin DataString="DI200.Input17" Description="Digital Input 17" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input18" Description="Digital Input 18" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input19" Description="Digital Input 19" TypeId="1" />
+              <ConnectorPin DataString="DI200.Input20" Description="Digital Input 20" TypeId="1" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="DI200">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the state is not equal than _ClassOK, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" /> 
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="This server shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Increments incorrect data transfers." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+    <!-- Digital Inputs -->
+    <Input Name="Digital Input 1" Channel="Input1" Type="Digital" Desc="Input 1 value" />
+    <Input Name="Digital Input 2" Channel="Input2" Type="Digital" Desc="Input 2 value" />
+    <Input Name="Digital Input 3" Channel="Input3" Type="Digital" Desc="Input 3 value" />
+    <Input Name="Digital Input 4" Channel="Input4" Type="Digital" Desc="Input 4 value" />
+    <Input Name="Digital Input 5" Channel="Input5" Type="Digital" Desc="Input 5 value" />
+    <Input Name="Digital Input 6" Channel="Input6" Type="Digital" Desc="Input 6 value" />
+    <Input Name="Digital Input 7" Channel="Input7" Type="Digital" Desc="Input 7 value" />
+    <Input Name="Digital Input 8" Channel="Input8" Type="Digital" Desc="Input 8 value" />
+    <Input Name="Digital Input 9" Channel="Input9" Type="Digital" Desc="Input 9 value" />
+    <Input Name="Digital Input 10" Channel="Input10" Type="Digital" Desc="Input 10 value" />
+    <Input Name="Digital Input 11" Channel="Input11" Type="Digital" Desc="Input 11 value" />
+    <Input Name="Digital Input 12" Channel="Input12" Type="Digital" Desc="Input 12 value" />
+    <Input Name="Digital Input 13" Channel="Input13" Type="Digital" Desc="Input 13 value" />
+    <Input Name="Digital Input 14" Channel="Input14" Type="Digital" Desc="Input 14 value" />
+    <Input Name="Digital Input 15" Channel="Input15" Type="Digital" Desc="Input 15 value" />
+    <Input Name="Digital Input 16" Channel="Input16" Type="Digital" Desc="Input 16 value" />
+    <Input Name="Digital Input 17" Channel="Input17" Type="Digital" Desc="Input 17 value" />
+    <Input Name="Digital Input 18" Channel="Input18" Type="Digital" Desc="Input 18 value" />
+    <Input Name="Digital Input 19" Channel="Input19" Type="Digital" Desc="Input 19 value" />
+    <Input Name="Digital Input 20" Channel="Input20" Type="Digital" Desc="Input 20 value" />
+    <Input Name="Inputs Double" Channel="InputDouble" Type="Analog" Desc="Bit 0 to 19 ... Input 1 to 20" />
+
+    <Script Name="DI200">
+<Code>
+def compPost_DI200(element, parameters):
+  
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] =  {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    SDIASPDORdAdd(0x4,element)
+
+</Code>
+    </Script>   
+  </Class>
+</HWClassInfo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<IOConnectionManager Version="2" Detail="0" PLC="">
+	<!-- List of Entries -->
+	<Entry Name="**IOCONN_EMPTY**" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="_DriveAxis1" Server="AxEnable" ObjClt="Abschluss1" Client="MTR_enable" IOI="Output" Type="Digital" SortIndex="5" KeyName="000005"/>
+			<IOConnection ObjSrv="_DriveAxis1" Server="SetSpeed" ObjClt="Abschluss1" Client="MTR_speed" IOI="Output" Type="Analog" SortIndex="6" KeyName="000006"/>
+			<IOConnection ObjSrv="_DriveAxis1" Server="AxEnable" IOI="Output" Type="Digital" SortIndex="7" KeyName="000007"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element0" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="DI2001" Server="Input1" IOI="Input" Type="Digital" SortIndex="0" KeyName="000001"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element1" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="DI2001" Server="Input2" IOI="Input" Type="Digital" SortIndex="1" KeyName="000002"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element2" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="TO1271" Server="Output1" IOI="Output" Type="Digital" SortIndex="2" KeyName="000003"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="IO_Element3" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="TO1271" Server="Output2" IOI="Output" Type="Digital" SortIndex="4" KeyName="000000"/>
+			<IOConnection ObjSrv="TO1271" Server="Output2" IOI="Output" Type="Digital" SortIndex="3" KeyName="000004"/>
+		</IOConnections>
+	</Entry>
+	<!-- List of Folders -->
+</IOConnectionManager>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Project
+	Version            = "10"
+	Name               = "4E_Gruppe1_Graf_Projekt1_HMI"
+	OnlineConnection   = "HMI_LAN"
+	SolutionType       = "Large"
+	WriteSrvListOnSave = "true"
+	CLASSType          = "true">
+	<OnlineConnectionInfo>
+		<TCPIP ConfigName="HMI_LAN" BUS="3" Password="" IP="10.31.11.11" PORT="1954" SomeFlags="0" PLCID=""/>
+	</OnlineConnectionInfo>
+	<HeaderFiles>
+		<File Path=".\Include\unit.h"/>
+		<File Path=".\Include\global.h"/>
+		<File Path=".\Include\UserDef.h"/>
+		<File Path=".\Include\types.h"/>
+		<File Path=".\Include\channels.h"/>
+		<File Path=".\Include\C_global.h"/>
+		<File Path=".\Include\C_types.h"/>
+		<File Path=".\Include\C_channels.h"/>
+		<File Path=".\Include\lslpublictypes.h"/>
+		<File Path=".\SystemTypes.h" Global="true"/>
+		<File Path=".\St_grconst.h" Global="true"/>
+		<File Path=".\St_graph.h" Global="true"/>
+		<File Path=".\Source\code\OsiBase.h"/>
+		<File Path=".\GraphicTypes.h" Global="true"/>
+		<File Path=".\Source\cppcode\T_nuc.h" Global="true"/>
+		<File Path=".\Source\cppcode\T_types.h" Global="true"/>
+		<File Path=".\Source\cppcode\T_ipc.h" Global="true"/>
+		<File Path=".\Source\cppcode\Comintfc.h" Global="true"/>
+		<File Path=".\Source\cppcode\T_color.h" Global="true"/>
+		<File Path=".\Source\cppcode\T_USER.H" Global="true"/>
+		<File Path=".\Class\Ram\Ram.h" Global="true"/>
+		<File Path=".\lsl_st_mt.h"/>
+		<File Path=".\Class\_AlarmXBuffer\AlarmXBuffer.h"/>
+		<File Path=".\Class\_AlarmX0Para\_AlarmX0Para.h"/>
+	</HeaderFiles>
+	<ClassFiles>
+		<File Path=".\Source\code\OsiBase.st"/>
+		<File Path=".\Class\Graphic\Graphic.st"/>
+		<File Path=".\Class\System\System.st"/>
+		<File Path=".\Source\cppcode\T_alarm.cpp"/>
+		<File Path=".\Source\cppcode\T_batch.cpp"/>
+		<File Path=".\Source\cppcode\T_bmp.cpp"/>
+		<File Path=".\Source\cppcode\T_com.cpp"/>
+		<File Path=".\Source\cppcode\T_complr.cpp"/>
+		<File Path=".\Source\cppcode\T_copy.cpp"/>
+		<File Path=".\Source\cppcode\T_crc.cpp"/>
+		<File Path=".\Source\cppcode\T_ctext.cpp"/>
+		<File Path=".\Source\cppcode\T_cursor.cpp"/>
+		<File Path=".\Source\cppcode\T_Diag.cpp"/>
+		<File Path=".\Source\cppcode\T_direct.cpp"/>
+		<File Path=".\Source\cppcode\T_edit.cpp"/>
+		<File Path=".\Source\cppcode\T_file.cpp"/>
+		<File Path=".\Source\cppcode\T_font.cpp"/>
+		<File Path=".\Source\cppcode\T_gfx.cpp"/>
+		<File Path=".\Source\cppcode\T_ibxlst.cpp"/>
+		<File Path=".\Source\cppcode\T_icon.cpp"/>
+		<File Path=".\Source\cppcode\T_init.cpp"/>
+		<File Path=".\Source\cppcode\T_kbrd.cpp"/>
+		<File Path=".\Source\cppcode\T_lib.cpp"/>
+		<File Path=".\Source\cppcode\T_LseOsz.cpp"/>
+		<File Path=".\Source\cppcode\T_main.cpp"/>
+		<File Path=".\Source\cppcode\T_memo.cpp"/>
+		<File Path=".\Source\cppcode\t_menu.cpp"/>
+		<File Path=".\Source\cppcode\T_obj.cpp"/>
+		<File Path=".\Source\cppcode\T_outio.cpp"/>
+		<File Path=".\Source\cppcode\T_ovrlod.cpp"/>
+		<File Path=".\Source\cppcode\T_pal.cpp"/>
+		<File Path=".\Source\cppcode\T_picmem.cpp"/>
+		<File Path=".\Source\cppcode\T_picpic.cpp"/>
+		<File Path=".\Source\cppcode\T_picsub.cpp"/>
+		<File Path=".\Source\cppcode\T_popsub.cpp"/>
+		<File Path=".\Source\cppcode\T_popup.cpp"/>
+		<File Path=".\Source\cppcode\T_pos.cpp"/>
+		<File Path=".\Source\cppcode\T_prj.cpp"/>
+		<File Path=".\Source\cppcode\T_save.cpp"/>
+		<File Path=".\Source\cppcode\T_scan.cpp"/>
+		<File Path=".\Source\cppcode\T_schema.cpp"/>
+		<File Path=".\Source\cppcode\T_scroll.cpp"/>
+		<File Path=".\Source\cppcode\T_Scrsvr.cpp"/>
+		<File Path=".\Source\cppcode\T_seek.cpp"/>
+		<File Path=".\Source\cppcode\T_Sett.cpp"/>
+		<File Path=".\Source\cppcode\T_setup.cpp"/>
+		<File Path=".\Source\cppcode\T_soft.cpp"/>
+		<File Path=".\Source\cppcode\T_stack.cpp"/>
+		<File Path=".\Source\cppcode\t_text.cpp"/>
+		<File Path=".\Source\cppcode\T_tool.cpp"/>
+		<File Path=".\Source\cppcode\T_urge.cpp"/>
+		<File Path=".\Source\cppcode\T_user.cpp"/>
+		<File Path=".\Source\cppcode\T_valid.cpp"/>
+		<File Path=".\Source\cppcode\T_varia.cpp"/>
+		<File Path=".\Source\cppcode\T_win.cpp"/>
+		<File Path=".\Source\cppcode\T_Hotkey.cpp"/>
+		<File Path=".\Source\cppcode\T_3d.cpp"/>
+		<File Path=".\Source\cppcode\t_urge1.cpp"/>
+		<File Path=".\Source\cppcode\t_move.cpp"/>
+		<File Path=".\Source\cppcode\t_watch.cpp"/>
+		<File Path=".\Source\cppcode\t_lang.cpp"/>
+		<File Path=".\Source\cppcode\T_JPG.cpp"/>
+		<File Path=".\Source\cppcode\T_Help.cpp"/>
+		<File Path=".\Source\cppcode\t_theme.cpp"/>
+		<File Path=".\Source\cppcode\T_render.cpp"/>
+		<File Path=".\Source\cppcode\T_comid.cpp"/>
+		<File Path=".\Source\cppcode\T_slider.cpp"/>
+		<File Path=".\Source\cppcode\T_explor.cpp"/>
+		<File Path=".\Source\cppcode\T_mesbox.cpp"/>
+		<File Path=".\Source\cppcode\T_task2.cpp"/>
+		<File Path=".\Source\cppcode\T_Tree.cpp"/>
+		<File Path=".\Source\cppcode\T_picadd.cpp"/>
+		<File Path=".\Source\cppcode\T_gfxgif.cpp"/>
+		<File Path=".\Source\cppcode\T_combox.cpp"/>
+		<File Path=".\Source\cppcode\T_piccar.cpp"/>
+		<File Path=".\Source\cppcode\T_convert.cpp"/>
+		<File Path=".\Class\_AlarmDisplay\_AlarmDisplay.st"/>
+		<File Path=".\Class\_Bit32\_Bit32.st"/>
+		<File Path=".\Class\_Bit32Ram\_Bit32Ram.st"/>
+		<File Path=".\Class\_Global\_Global.st"/>
+		<File Path=".\Class\_HotAlarm\_HotAlarm.st"/>
+		<File Path=".\Class\_LanguageSelection\_LanguageSelection.st"/>
+		<File Path=".\Class\_LimitMax\_LimitMax.st"/>
+		<File Path=".\Class\_LimitMin\_LimitMin.st"/>
+		<File Path=".\Class\_Lse\_Lse.st"/>
+		<File Path=".\Class\_MyIO\_MyIO.st"/>
+		<File Path=".\Class\_OsziLSE\_OsziLSE.st"/>
+		<File Path=".\Class\_OsziLSEBackground\_OsziLSEBackground.st"/>
+		<File Path=".\Class\_Radio32\_Radio32.st"/>
+		<File Path=".\Class\_Radio32Ram\_Radio32Ram.st"/>
+		<File Path=".\Class\_Screen\_Screen.st"/>
+		<File Path=".\Class\_ScrollArea\_ScrollArea.st"/>
+		<File Path=".\Class\_ScrollArea2\_ScrollArea2.st"/>
+		<File Path=".\Class\_SysDateTime\_SysDateTime.st"/>
+		<File Path=".\Class\_ToolCat\_ToolCat.st"/>
+		<File Path=".\Class\_XAccess\_XAccess.st"/>
+		<File Path=".\Class\GetBroadCastData\GetBroadCastData.st"/>
+		<File Path=".\Class\KeyPadAnum\KeyPadAnum.st"/>
+		<File Path=".\Class\KeyPadImages\KeyPadImages.st"/>
+		<File Path=".\Class\KeyPadNum\KeyPadNum.st"/>
+		<File Path=".\Class\Ram\Ram.st"/>
+		<File Path=".\Class\_AlarmX0Para\_AlarmX0Para.st"/>
+		<File Path=".\Class\_AlarmX1Para\_AlarmX1Para.st"/>
+		<File Path=".\Class\_AlarmXBuffer\_AlarmXBuffer.st"/>
+	</ClassFiles>
+	<NetworkFiles>
+		<File Path=".\Network\LseRtkMain\LseRtkMain.lcn"/>
+		<File Path=".\Network\LseRtkAlarm\LseRtkAlarm.lcn"/>
+	</NetworkFiles>
+	<ObjectFiles>
+		<File Path=".\Loader\Source\Loader.lob" Downloadable="false"/>
+	</ObjectFiles>
+	<DocuFiles>
+		<File Path=".\Class\_Bit32\Bit32.pdf"/>
+		<File Path=".\Class\_Bit32\Bit32_eng.pdf"/>
+		<File Path=".\Class\GetBroadCastData\GetBroadcastData.pdf"/>
+		<File Path=".\Class\GetBroadCastData\GetBroadcastData_eng.pdf"/>
+		<File Path=".\Class\KeyPadImages\KeyPadImages.pdf"/>
+		<File Path=".\Class\KeyPadImages\KeyPadImages_eng.pdf"/>
+	</DocuFiles>
+	<Options>
+		<Target UseFPU="true" Processor="ARM">
+		</Target>
+		<Compiler
+			CompilerVersion         = "28"
+			VariableNeverUsed       = "true"
+			ValueNeverUsed          = "true"
+			LabelNeverUsed          = "true"
+			ParameterNeverUsed      = "true"
+			VariableUnitialized     = "true"
+			RetValueUnitialized     = "true"
+			PrivateDataAccess       = "true"
+			SemicolonMissing        = "true"
+			ConditionConstant       = "true"
+			ExactTypeChecking       = "true"
+			CheckConnectionTypes    = "true"
+			CompileCFiles           = "true"
+			Alignment               = "4 Byte"
+			ReducedClientDependency = "true"
+			MaxModuleErrorCount     = "100">
+		</Compiler>
+		<Directories
+			Class       = ".\Class\"
+			Network     = ".\Network\"
+			Source      = ".\Source\"
+			Include     = ".\Include\"
+			Loader      = ".\Loader\"
+			PrjInternal = ".\ProjectInternal\">
+		</Directories>
+	</Options>
+	<SigmatekFolders>
+		<OSInterfaceFolders>
+			<Folder Name="old">
+				<Class Name="Graphic"/>
+				<Class Name="System"/>
+			</Folder>
+		</OSInterfaceFolders>
+		<Folder Name="Tools">
+			<Folder Name="Memory">
+				<Class Name="Ram"/>
+			</Folder>
+			<Folder Name="Visualisation">
+				<Folder Name="LseRtk">
+					<Folder Name="Alarm">
+						<Folder Name="PLC">
+							<Class Name="_AlarmX0Para"/>
+							<Class Name="_AlarmX1Para"/>
+							<Class Name="_AlarmXBuffer"/>
+						</Folder>
+						<Folder Name="Visu">
+							<Class Name="_AlarmDisplay"/>
+							<Class Name="_HotAlarm"/>
+						</Folder>
+					</Folder>
+					<Folder Name="Project">
+						<Class Name="_Lse"/>
+					</Folder>
+					<Folder Name="UserInterface">
+						<Class Name="_Bit32"/>
+						<Class Name="_Bit32Ram"/>
+						<Class Name="_Global"/>
+						<Class Name="_LanguageSelection"/>
+						<Class Name="_LimitMax"/>
+						<Class Name="_LimitMin"/>
+						<Class Name="_MyIO"/>
+						<Class Name="_OsziLSE"/>
+						<Class Name="_OsziLSEBackground"/>
+						<Class Name="_Radio32"/>
+						<Class Name="_Radio32Ram"/>
+						<Class Name="_Screen"/>
+						<Class Name="_ScrollArea"/>
+						<Class Name="_ScrollArea2"/>
+						<Class Name="_SysDateTime"/>
+						<Class Name="_ToolCat"/>
+						<Class Name="_XAccess"/>
+						<Class Name="GetBroadCastData"/>
+						<Class Name="KeyPadAnum"/>
+						<Class Name="KeyPadImages"/>
+						<Class Name="KeyPadNum"/>
+					</Folder>
+				</Folder>
+			</Folder>
+		</Folder>
+	</SigmatekFolders>
+	<NetworkFolders>
+		<Folder Name="LseRtk">
+			<Network Name="LseRtkAlarm"/>
+			<Network Name="LseRtkMain"/>
+		</Folder>
+	</NetworkFolders>
+	<Units>
+		<UnitGrp Name="Acceleration">
+			<Unit Name="mmPsec2" Factor="1" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Angle">
+			<Unit Name="deg" Factor="10000" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Area">
+			<Unit Name="mm2" Factor="10" Ref="S" Comment="x.x sqare millimeter"/>
+		</UnitGrp>
+		<UnitGrp Name="Force">
+			<Unit Name="kN" Factor="1000 N" Ref="S"/>
+			<Unit Name="N" Factor="1" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Length">
+			<Unit Name="m" Factor="1000 mm" Ref="S"/>
+			<Unit Name="mm" Factor="10000" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Memory">
+			<Unit Name="GB" Factor="1024 MB" Ref="S"/>
+			<Unit Name="kB" Factor="1024" Ref="S"/>
+			<Unit Name="MB" Factor="1024 kB" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Pressure">
+			<Unit Name="bar" Factor="1000" Ref="S" Comment="x.xxx Bar ( MilliBar)"/>
+		</UnitGrp>
+		<UnitGrp Name="Revolution">
+			<Unit Name="RPM" Factor="1000" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Speed">
+			<Unit Name="mlpmin" Factor="1" Ref="S"/>
+			<Unit Name="mmpsec" Factor="10000" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Time">
+			<Unit Name="hours" Factor="60 min" Ref="S"/>
+			<Unit Name="min" Factor="60 secs" Ref="S"/>
+			<Unit Name="ms" Factor="1" Ref="S"/>
+			<Unit Name="sec" Factor="1000" Ref="S"/>
+			<Unit Name="secs" Factor="1000 ms" Ref="S"/>
+		</UnitGrp>
+		<UnitGrp Name="Volume">
+			<Unit Name="ccm" Factor="1" Ref="S" Comment="cubic centimeter"/>
+		</UnitGrp>
+	</Units>
+</Project>

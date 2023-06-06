@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HWClassInfo>
+	<Class Name="VaranManager_2" NeedClasses="HwControl" SingleObject="VaranManager">
+    <Uplink Name="VaranManager" Channel="To_HwControl" BusType="HWCONTROL_VM"/>
+    <Property Name="Varan Manager Time" Channel="VaranManagerTime" Desc="realtime time in ns (default: 1000000), as Initvalue" Editor="EditNumber:Signed;Dec" />
+    <Property Name="VaranManagerNr" Channel="VaranManagerNr" Type = "Analog" Desc="Here, the VaranManager number is set (when server VaranManagers are available in the system).Default value: 0 initialization value." Editor="EditNumber:Signed;Dec" />
+    <Property Name="Prevent Manager Error" Channel="PreventManagerError" Desc="0 = normal triggering of a manager error, 1 = prevents a manager error " Editor="Combo:0=Activate VaranManagerError;1=Deactivate VaranManagerError (System will not halt on Error)" />
+    <Property Name="Iso Start Point" Channel="IsoStartPoint" Desc="% of VaranManagerTime [1..99]" Editor="Range:1..99;Empty" DefaultValue="50" />
+    <Property Name="IRQ TaskTime" Channel="IRQTaskTime" Desc="IRQ Task Time in ns, has to be a multiple of VaranManagerTime" Editor="EditNumber:Signed;Dec" />
+    <Property Name="Is Also Client" Channel="IsAlsoClient" Desc="set if manager is also a client (VMC)" Editor="Combo:0=Is no Client;1=Is also Client" />
+    <Property Name="Superior System Time" Channel="SuperiorSystemTime" Desc="varan time of superior system in ns, has to be a multiple of VaranManagerTime" Editor="EditNumber:Signed;Dec" />
+    <Property Name="Payload Frame" Channel="PayloadFrame" Desc="Set if manager uses payload frames" Editor="Combo:0=No Payload Frames;1=Use Payload Frames" />
+    <!--<Property Name="Split R/W Accesses" Channel="SplitRdWrAccesses" Desc="Set if read and write operations should be done separate" Editor="Combo:0=Mixed R/W;1=Split R/W" /> -->
+	
+<!--
+	<IOState Name = "State" Channel = "State"  Type = "Analog" Desc = "This Serve shows the state of varan manager class"/>
+	<IOState Name = "ManagerOn" Channel = "ManagerOn"  Type = "Analog" Desc = "This server signals whether the hardware is On or Off &#13;&#10; 0 = Hardware not running &#13;&#10; 1 = Hardware running &#13;&#10; -1 = VARAN not available / operating system does not support VARAN (too old)"/>
+	<Input Name = "Release" Channel = "Release" Type = "Analog" Desc = "FPGA - Version"/>
+	<Input Name="RetryCounter" Channel="RetryCounter" Desc="Retry counter of varan module" Type="Analog" />
+	<IOState Name = "IsoVaranTime" Channel = "IsoVaranTime"  Type = "Analog" Desc = "In this server, the required time for the isochronous DataObjectList of the VARAN bus is shown in ns."/>
+	<IOState Name = "AsyVaranTime" Channel = "AsyVaranTime"  Type = "Analog" Desc = "In this server, the required time for the asynchronous DataObjectList of the VARAN bus is shown in ns."/>
+	<IOState Name = "Act_RtTime" Channel = "Act_RtTime"  Type = "Analog" Desc = "The actual Rt runtime for the VARAN hardware classes in µs. &#13;&#10; Measurement starts with call of first realtime-object and stops with last call of RtPostScan-Object"/>
+	<IOState Name = "Min_RtTime" Channel = "Min_RtTime"  Type = "Analog" Desc = "The minimum Rt runtime for the VARAN hardware classes in µs. &#13;&#10; Measurement starts with call of first realtime-object and stops with last call of RtPostScan-Object"/>
+	<IOState Name = "Max_RtTime" Channel = "Max_RtTime"  Type = "Analog" Desc = "The maximum Rt runtime for the VARAN hardware classes (including the time the Rt task is interrupted, e.g. interrupts or higher priority tasks) in µs."/>
+	<IOState Name = "Act_RtCallTime" Channel = "Act_RtCallTime"  Type = "Analog" Desc = "The actual time of the real-time task (time between the last and actual call) in µs."/>
+	<IOState Name = "Min_RtCallTime" Channel = "Min_RtCallTime"  Type = "Analog" Desc = "The minimum call time between two Rt calls in µs."/>
+	<IOState Name = "Max_RtCallTime" Channel = "Max_RtCallTime"  Type = "Analog" Desc = "The maximum call time between two Rt calls in µs."/>
+	<IOState Name = "SuperiorSystemOK" Channel = "SuperiorSystemOK"  Type = "Analog" 
+	Desc = "0 = AliveCounter of the primary system not OK &#13;&#10; 1 = Primary system running &#13;&#10; 1 = VARAN Manager client is not active" />
+-->
+	<Downlink Name="VaranOut_1" BusType="VARAN" Port="0" />
+	<Downlink Name="VaranOut_2" BusType="VARAN" Port="1" />
+	
+<Script Name="VaranManager_2">
+  <Parameter Name="PayloadFrame" Type="Client" Channel="PayloadFrame" Desc="" />
+  <Parameter Name="SplitRdWr" Type="Client" Channel="SplitRdWrAccesses" Desc="" />
+  <Parameter Name="ReadWriteDoSeperate2" Type="Client" Channel="ReadWriteDoSeperate2" Desc="" />
+  <Parameter Name="BusCycleTime" Type="Client" Channel="VaranManagerTime" Desc="" />
+  
+<Code>
+def compPre_VaranManager_2(element, parameters):
+  parameters['PayloadFrame'] = element['options']['PayloadFrame']
+  parameters['SplitRdWr'] = element['options']['SplitRdWr']    
+  parameters['BusCycleTime'] = element['options']['BusCycleTime']    
+</Code>
+</Script>
+	
+    	</Class>
+</HWClassInfo>

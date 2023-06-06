@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HWClassInfo>
+	<Class Name="HwControl" >
+		<Downlink Name="VaranManager" Channel="Control" BusType="HWCONTROL_VM" Port="0" />
+		<Downlink Name="DiasMaster" BusType="HWCONTROL_DMC" Port="0" />
+		<Downlink Name="SDias" Channel="Control" BusType="HWCONTROL_SDM" Port="0" />
+		<Downlink Name="OnBoardIO" Channel="Control" BusType="OnBoardIO" Port="0" />
+	</Class>
+</HWClassInfo>

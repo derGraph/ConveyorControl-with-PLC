@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<HwVisualConfigManager>
+	<HwVisualConfig Key="__HW_MAIN_PLC__" DeviceType="CP111" Top="20" Left="20"/>
+	<HwVisualConfig Key="_DriveAxis1" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="_DriveAxis2" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="_DriveMng_DC0621" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="_DriveMng_MDD1001" Top="128.8" Left="20"/>
+	<HwVisualConfig Key="AM4411" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="DI2001" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="SCP0111" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="SDM0811" Top="335.8" Left="20"/>
+	<HwVisualConfig Key="TO1271" Top="335.8" Left="20"/>
+	<HwVisualConnection Source="_DriveMng_MDD1001.VaranIn" Destination="VaranManager_21.VaranOut_2" Vertices="(64.3,168),(17,168),(17,78),(39.9,78),"/>
+</HwVisualConfigManager>
